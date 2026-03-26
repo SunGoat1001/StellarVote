@@ -51,16 +51,21 @@ Thực hiện bỏ phiếu:
 
 Bash
 stellar contract invoke \
-  --id <YOUR_CONTRACT_ID> \
+  --id CA4ED5MQPIQY7C43OL5A4G6ALEIAORP27TVD2QOW6MXRXDYWOYIJRXBF \
   --source-account student \
   --network testnet \
   --send=yes \
   -- vote \
   --voter student \
-  --choice 0
+  --choice 32
+  
 🛡️ Bảo mật & Tối ưu hóa
 Storage: Sử dụng persistent storage để đảm bảo dữ liệu không bị xóa sau khi hợp đồng hết hạn TTL (Time To Live).
 
 Validation: Ngăn chặn lỗi IndexBounds bằng cách kiểm tra và mở rộng độ dài Vector (Vec) tự động trước khi ghi dữ liệu.
 
 Auth: Ép buộc xác thực thông qua voter.require_auth() để tránh tấn công giả mạo (Impersonation).
+
+<img width="900" height="249" alt="image" src="https://github.com/user-attachments/assets/7d5f723d-b61f-4d1a-a9e5-7c0290f5dbc7" />
+
+<img width="902" height="212" alt="image" src="https://github.com/user-attachments/assets/83132250-7093-4701-aa77-09a8bede21b4" />
